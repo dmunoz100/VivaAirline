@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/VivaAirline/static/css/main.c2713095.css",
-    "main.js": "/VivaAirline/static/js/main.9c64a4d4.js",
+    "main.css": "/VivaAirline/static/css/main.f052ffac.css",
+    "main.js": "/VivaAirline/static/js/main.a0c49a14.js",
     "static/media/fontello-all.svg?24838354": "/VivaAirline/static/media/fontello-all.f33754e5db87d879d3e0.svg",
     "static/media/fontello-all.eot?24838354": "/VivaAirline/static/media/fontello-all.f962763385863035c370.eot",
     "static/media/fontello-all.ttf?24838354": "/VivaAirline/static/media/fontello-all.7e4b4a6cf3b084346a90.ttf",
     "static/media/fontello-all.woff?24838354": "/VivaAirline/static/media/fontello-all.fa43baaf21fa19b01e13.woff",
     "static/media/fontello-all.woff2?24838354": "/VivaAirline/static/media/fontello-all.e39685fdac0db975dab4.woff2",
     "index.html": "/VivaAirline/index.html",
-    "main.c2713095.css.map": "/VivaAirline/static/css/main.c2713095.css.map",
-    "main.9c64a4d4.js.map": "/VivaAirline/static/js/main.9c64a4d4.js.map"
+    "main.f052ffac.css.map": "/VivaAirline/static/css/main.f052ffac.css.map",
+    "main.a0c49a14.js.map": "/VivaAirline/static/js/main.a0c49a14.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2713095.css",
-    "static/js/main.9c64a4d4.js"
+    "static/css/main.f052ffac.css",
+    "static/js/main.a0c49a14.js"
   ]
 }
