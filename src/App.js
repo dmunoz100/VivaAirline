@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import { useState } from "react";
-import {Home} from './Pages/Home';
+import Home from './Pages/Home';
 import {MyReservation} from './Pages/MyReservation'
  const App = () => {
 

@@ -6,15 +6,24 @@ import { Autocomplete } from "../Components/Autocomplete";
 import * as CityServices from "../Services/CityServices";
 import { Formik } from "formik";
 import { FlightsPanel } from "../Components/Flights";
-export const Home = (props) => {
-  const { Reservation } = props;
+import {setCatalogCities}from '../Store/Action'
+import {connect} from 'react-redux'
+
+
+  const Cities = state=> {
+    console.log(state);
+    return {
+      cities : state
+    }
+  }
+
+ const Home = (props) => {
+  const {cities ,Reservation,setCatalogCities} = props;
   const Passenger = usePassenger();
-  const [Citys, setCitys] = useState();
   const [Flights, setFlights] = useState(false);
 
-  useEffect(async () => {
+ useEffect(async () => {
     var AllCitiesWord = [];
-    var idCity = 0;
     var ServicesCities = await CityServices.GetCitys();
     AllCitiesWord = ServicesCities.data.states.map((x, index) => {
       return {
@@ -22,7 +31,7 @@ export const Home = (props) => {
         name: x.name,
       };
     });
-    setCitys([...AllCitiesWord]);
+    setCatalogCities(AllCitiesWord);
   }, []);
 
   const VaidateForm = (values) => {
@@ -88,7 +97,7 @@ export const Home = (props) => {
                     <> </>
                   )}
                   <Autocomplete
-                    items={Citys}
+                    items={cities}
                     name="Source"
                     formik={formik}
                     placeholder="Origen"
@@ -101,7 +110,7 @@ export const Home = (props) => {
                     <> </>
                   )}
                   <Autocomplete
-                    items={Citys}
+                    items={cities}
                     name="Destination"
                     formik={formik}
                     placeholder="Destino"
@@ -173,3 +182,5 @@ export const Home = (props) => {
     </>
   );
 };
+
+export default connect(Cities,{setCatalogCities})(Home);
