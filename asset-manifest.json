@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/VivaAirline/static/css/main.f052ffac.css",
-    "main.js": "/VivaAirline/static/js/main.a0c49a14.js",
-    "static/media/fontello-all.svg?24838354": "/VivaAirline/static/media/fontello-all.f33754e5db87d879d3e0.svg",
-    "static/media/fontello-all.eot?24838354": "/VivaAirline/static/media/fontello-all.f962763385863035c370.eot",
-    "static/media/fontello-all.ttf?24838354": "/VivaAirline/static/media/fontello-all.7e4b4a6cf3b084346a90.ttf",
-    "static/media/fontello-all.woff?24838354": "/VivaAirline/static/media/fontello-all.fa43baaf21fa19b01e13.woff",
-    "static/media/fontello-all.woff2?24838354": "/VivaAirline/static/media/fontello-all.e39685fdac0db975dab4.woff2",
-    "index.html": "/VivaAirline/index.html",
-    "main.f052ffac.css.map": "/VivaAirline/static/css/main.f052ffac.css.map",
-    "main.a0c49a14.js.map": "/VivaAirline/static/js/main.a0c49a14.js.map"
+    "main.css": "/static/css/main.99448aea.css",
+    "main.js": "/static/js/main.3faf7a4e.js",
+    "static/media/fontello-all.svg?24838354": "/static/media/fontello-all.f33754e5db87d879d3e0.svg",
+    "static/media/fontello-all.eot?24838354": "/static/media/fontello-all.f962763385863035c370.eot",
+    "static/media/fontello-all.ttf?24838354": "/static/media/fontello-all.7e4b4a6cf3b084346a90.ttf",
+    "static/media/fontello-all.woff?24838354": "/static/media/fontello-all.fa43baaf21fa19b01e13.woff",
+    "static/media/fontello-all.woff2?24838354": "/static/media/fontello-all.e39685fdac0db975dab4.woff2",
+    "index.html": "/index.html",
+    "main.99448aea.css.map": "/static/css/main.99448aea.css.map",
+    "main.3faf7a4e.js.map": "/static/js/main.3faf7a4e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f052ffac.css",
-    "static/js/main.a0c49a14.js"
+    "static/css/main.99448aea.css",
+    "static/js/main.3faf7a4e.js"
   ]
 }
