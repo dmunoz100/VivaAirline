@@ -15,6 +15,7 @@ export const ModalReservation = (props) => {
 
 const VaidateForm = (values) => {
     const error = {};
+    var re = /\S+@\S+\.\S+/;
     if(values.Name===""){
         error.Name = "*";
     }
@@ -24,8 +25,12 @@ const VaidateForm = (values) => {
     if(values.Adress===""){
         error.Adress = "*";
     }
-    if(values.Email===""){
+    if(values.Email==="" ){
         error.Email = "*";
+    }else {
+      if(re.test(values.Email)=== false){
+        error.Email = "Formato Email Invalido";
+      }
     }
     return error
 }
@@ -70,7 +75,7 @@ const VaidateForm = (values) => {
                 <Field type="text" name="Adress" placeholder = "Dirección"></Field>
                 </div>
                 <div className="column-4 ">
-                <ErrorMessage render={(msg) => (<i className="i-warning text-danger"></i> )}name="Email"/>
+                <ErrorMessage render={(msg) => (<i className="i-warning text-danger">{msg}</i> )}name="Email"/>
                 <Field type="text" name="Email" placeholder = "Email"></Field>
                 </div>
                 <div className="column-2 ">

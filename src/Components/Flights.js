@@ -43,7 +43,7 @@ export const FlightsPanel = (props) => {
                          {x.Departuretime} <i className='i-clock'></i>
                          </div>
                          <div className="column-1">
-                         {`$ ${x.Price} / por Pasajero`}
+                         {`$ ${x.Price} MXN / por Pasajero`}
                          </div>
                          <div className="column-1">
                             <button onClick={e=>Bookflight(x)} className='buttonLarge'>Agregar al Carrito <i className='i-cart-plus'></i></button>

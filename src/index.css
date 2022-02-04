@@ -26,9 +26,21 @@ body{
   border-radius: 5px;
 }
 
-.container :first-child{
-  margin: 5px;
-} 
+.card {
+  border: 1px solid #dadada;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card i{
+  font-size: 45px;
+  padding: 5px 5px;
+}
+
+.card:hover{
+  background-color: #57094d;
+  color: white;
+}
 
 input[type=text], select {
   width: 100%;
@@ -77,10 +89,11 @@ input[type=text], select {
   background-color: purple;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
 }
 
 
@@ -99,6 +112,10 @@ img {
 .item-list {
   border: 1px solid #cacaca;
   border-radius: 8px;
+}
+
+.item-list:hover{
+  background-color: #f2f2f2;
 }
 
 .menu span{
@@ -157,13 +174,13 @@ button[disabled]{
   
   .column-2 {
     float: left;
-    width: 47%;
+    width: 50%;
     padding: 10px;
   }
   
   .column-1 {
     float: left;
-    width: 24%;
+    width: 25%;
     padding: 10px;
   }
 
@@ -223,13 +240,13 @@ button[disabled]{
   
   .column-2 {
     float: left;
-    width: 47%;
+    width: 50%;
     padding: 10px;
   }
   
   .column-1 {
     float: left;
-    width: 24%;
+    width: 25%;
     padding: 10px;
   }
 

@@ -41,30 +41,25 @@ export const MyReservation = (props) => {
             <div key={index} className="column-4 ">
               <div className="row ">
                 <div className="column-3 item-list">
-                  <label>
-                    <i className="i-location"></i>Origen:
-                  </label>
-                  <label>{x.Source.name}</label>
-                  <label>
-                    <i className="i-location"></i>Destino:
-                  </label>
-                  <label>{x.Destination.name}</label>
-                  <label>
-                    <i className="i-user"></i>Cantidad de Pasajeros:
-                  </label>
-                  <label>{x.Passenger}</label>
-                  <label>
-                    <i className="i-calendar"></i>Fecha Salida:
-                  </label>
-                  <label>{x.Date}</label> <br></br>
-                  <label>
-                    <i className="i-clock"></i>Hora Salida:
-                  </label>
-                  <label>{x.Departuretime}</label>
-                  <label>
-                    <i className="i-dollar"></i>Precio:
-                  </label>
-                  <label>{x.Price}</label>
+                      <div className='column-1'>
+                          <div className='column-4'><i className='i-location'></i>Vuelo Origen:</div>
+                          <div className='column-4'>  <label>{x.Source.name}</label></div>
+                          <div className='column-4'><i className='i-location'></i>Vuelo Destino:</div>
+                          <div className='column-4'> <label>{x.Destination.name}</label></div>
+                      </div>
+                      <div className='column-2'>
+                          <div className='column-4'><i className='i-calendar'></i>Fecha Vuelo</div>
+                          <div className='column-4'> <label>{x.Date}</label></div>
+                          <div className='column-4'><i className='i-clock'></i>Hora de Veulo</div>
+                          <div className='column-4'> <label>{x.Departuretime}</label></div>
+                      </div>
+                      <div className='column-1'>
+                        <div className='column-4'><i className='i-user'></i> Cantidad de Pasajeros:</div>
+                        <div className='column-4'>  <label>{x.Passenger}</label></div>
+                        <div className='column-4'><i className='i-dollar'></i>Precio por Pasajero</div>
+                        <div className='column-4'><label>{`$ ${x.Price}`}</label></div>
+                      </div>
+
                 </div>
                 <div className="column-1">
                   <button
