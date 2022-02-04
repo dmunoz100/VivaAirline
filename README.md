@@ -1,12 +1,14 @@
-# Getting Started with Create React App
+# Descipcion de la Aplicacion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Viva Airline es una aplicacion web realizada mendiante React Js para emular la reservacion de un vuelo en la cual se implemento el uso de varias librerias y consumo de una api publica para la consulta de los destinos 
 
-## Available Scripts
+## Librerias Usadas
 
-In the project directory, you can run:
+1) Axios .- consumo de api
+2) React Route .- Controlar las rutas
+3) Formik .- Para la validacion y control de los formularios
 
-### `npm start`
+### 
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
