@@ -11,9 +11,8 @@ import {connect} from 'react-redux'
 
 
   const Cities = state=> {
-    console.log(state);
     return {
-      cities : state
+      cities : state.CitiesReducer
     }
   }
 
