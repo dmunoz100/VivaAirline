@@ -19,7 +19,8 @@ export const FlightsPanel = (props) => {
         var CurrentReservation = Reservation[0];
         CurrentReservation.push({...FlightsData,...itemSelected});
         Reservation[1]([...CurrentReservation]);
-        resetForm()
+        resetForm();
+        alert("Se ha Agregado un Elemento Al Carrito");
     }
 
   return (
