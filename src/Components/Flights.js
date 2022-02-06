@@ -1,12 +1,16 @@
 import { useEffect,useState } from 'react'
 import {useFlights} from '../Hooks/useFlights'
+import { useReservation } from "../Hooks/useReservation";
+
 export const FlightsPanel = (props) => {
 
     const {
         FlightsData,
-        resetForm,
-        Reservation
+        resetForm
     }=props;
+
+
+    const [Reservation,setReservation] = useReservation();
     const [TimeFlights,setFlights] = useState([]);
     const Flights = useFlights();
 
@@ -16,9 +20,9 @@ export const FlightsPanel = (props) => {
     ,[]);
 
     const Bookflight = itemSelected => {
-        var CurrentReservation = Reservation[0];
+        var CurrentReservation = Reservation;
         CurrentReservation.push({...FlightsData,...itemSelected});
-        Reservation[1]([...CurrentReservation]);
+        setReservation([...CurrentReservation]);
         resetForm();
         alert("Se ha Agregado un Elemento Al Carrito");
     }

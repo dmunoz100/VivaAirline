@@ -1,13 +1,13 @@
 import { Formik,Field,ErrorMessage } from 'formik'
+import {useReservation} from '../Hooks/useReservation'
 export const ModalReservation = (props) => {
   const { ShowModal,
-    Reservation,
     CloseModalReserve
  } = props;
-
+ const [Reservation,setReservation] = useReservation();
  const saveRequest = async (values,resetForm) => {
     resetForm();
-    Reservation[1]([...[]]);
+    setReservation([...[]]);
     CloseModalReserve();
     alert("“Gracias por tu reserva!”");
 }
