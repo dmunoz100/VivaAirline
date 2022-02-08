@@ -29,5 +29,5 @@ Metodo usado en el proyecto Actual
 5) Abrir el la carpeta de repositorio mediante mediante el visual studio code 
 6) Una ves Con la carpeta abierta abrimos la terminal 
 7) Importante desargar los paquetes de node_modules para esto ejecutamos npm install
-8) Despues ejecutamos el comando para correr nuestra aplicacion npm serve 
+8) Despues ejecutamos el comando para correr nuestra aplicacion npm start
 9) Listo ya con esto tendremos abierto la aplicacion de manera local 
